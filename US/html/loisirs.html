@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="IUT de Meaux" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		/>
+		<link rel="stylesheet" href="../style/style.css" />
+		<link rel="stylesheet" href="../style/header.css" />
+		<link rel="stylesheet" href="../style/loisirs.css" />
+		<link rel="stylesheet" href="../style/footer.css" />
+		<link rel="icon" type="image/png" href="../img/logo.png" />
+		<title>TP1 : Loisirs</title>
+	</head>
+	<body>
+		<div class="entete">
+			<header>
+				<div class="logo" onclick="location.href='index.html'">
+					<img src="../img/logo.png" alt="logo" />
+				</div>
+				<button id="burger">
+					<i class="fas fa-bars"></i>
+				</button>
+			</header>
+			<div class="nav" id="nav">
+				<div class="entete_nav">
+					<h3>Menu</h3>
+					<i class="fas fa-times" id="fermer"></i>
+				</div>
+				<hr />
+				<nav>
+					<ul>
+						<li><a href="etudes.html">Etudes</a></li>
+						<li><a href="competences.html">Compétences</a></li>
+						<li><a href="favoris.html">Favoris</a></li>
+						<li><a href="loisirs.html">Loisirs</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<section class="hero">
+			<h1>Bienvenue</h1>
+			<p>
+				Nous sommes des étudiants de
+				<span>l'Université Gustave Eiffel</span> de Meaux <br />
+				Dans le parcour de <span>développement web.</span>
+			</p>
+			<i class="fas fa-arrow-down" id="fleche"></i>
+		</section>
+		<main>
+			<div class="bouton">
+				<button id="charly_btn">Charly</button>
+				<button id="anges_btn">Anges</button>
+			</div>
+			<div class="demander">
+				<label for="stylepage">Page Style </label>
+				<input type="radio" name="style" id="stylepage" />
+				<label for="styleprof">Prof Style </label>
+				<input type="radio" name="style" id="styleprof" />
+			</div>
+			<div class="container">
+				<h1>Loisirs</h1>
+				<section id="charly" class="loisirs_charly">
+					<article>
+						<img src="../img/loisir/jouer.jpg" alt="" />
+						<p>Jouer</p>
+					</article>
+					<article>
+						<img src="../img/loisir/dessiner.webp" alt="" />
+						<p>dessinées</p>
+					</article>
+					<article>
+						<img src="../img/loisir/lire.jpg" alt="" />
+						<p>Lire</p>
+					</article>
+					<article>
+						<img src="../img/loisir/piano.jpg" alt="" />
+						<p>Piano</p>
+					</article>
+					<article>
+						<img src="../img/loisir/sport.avif" alt="" />
+						<p>Sport</p>
+					</article>
+				</section>
+				<section id="anges" class="loisirs_anges">
+					<article>
+						<img src="../img/loisir/lecture.jpg" alt="" />
+						<p>Lecture</p>
+					</article>
+					<article>
+						<img src="../img/loisir/musique.jpg" alt="" />
+						<p>musique</p>
+					</article>
+					<article>
+						<img src="../img/loisir/sport.jpg" alt="" />
+						<p>Sport</p>
+					</article>
+				</section>
+				<table id="charly_table">
+					<tr>
+						<th>Loisir</th>
+						<th>Description</th>
+						<th>Image</th>
+					</tr>
+					<tr>
+						<td>Jouer</td>
+						<td>J'aime jouer a des jeux videos</td>
+						<td>
+							<img src="../img/loisir/jouer.jpg" alt="Lecture" />
+						</td>
+					</tr>
+					<tr>
+						<td>Dessinée</td>
+						<td>j'aime dessiner des personnages et des animaux</td>
+						<td>
+							<img
+								src="../img/loisir/dessiner.webp"
+								alt="Voyage"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>Lire</td>
+						<td>
+							J'aime lire des bandes dessinées (manga, manhwa,
+							manhua).
+						</td>
+						<td>
+							<img src="../img/loisir/lire.jpg" alt="Sport" />
+						</td>
+					</tr>
+					<tr>
+						<td>Piano</td>
+						<td>J'aime jouer au piano.</td>
+						<td>
+							<img src="../img/loisir/piano.jpg" alt="Musique" />
+						</td>
+					</tr>
+					<tr>
+						<td>Sport</td>
+						<td>J'aime pratiquer du sport.</td>
+						<td>
+							<img src="../img/loisir/sport.avif" alt="Sport" />
+						</td>
+					</tr>
+				</table>
+
+				<table id="anges_table">
+					<tr>
+						<th>Loisir</th>
+						<th>Description</th>
+						<th>Image</th>
+					</tr>
+
+					<tr>
+						<td>Sport</td>
+						<td>j'aime dessiner des personnages et des animaux</td>
+						<td>
+							<img src="../img/loisir/sport.jpg" alt="Voyage" />
+						</td>
+					</tr>
+					<tr>
+						<td>Lecture</td>
+						<td>J'aime lire.</td>
+						<td>
+							<img src="../img/loisir/lecture.jpg" alt="Sport" />
+						</td>
+					</tr>
+					<tr>
+						<td>musique</td>
+						<td>J'aime ecouter de la musique</td>
+						<td>
+							<img
+								src="../img/loisir/musique.jpg"
+								alt="Musique"
+							/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<img
+				src="../img/logo.png"
+				alt=""
+				onclick="location.href='https://www.univ-gustave-eiffel.fr'"
+			/>
+
+			<section class="copyright">
+				<p>Designed by <span>Charly</span></p>
+				<p>Develloped by <span>Charly</span></p>
+				<p>Copyright &copy; 2024. Tous droits réservés.</p>
+			</section>
+			<hr />
+			<section class="reseaux">
+				<div class="linkedin">
+					<i
+						class="bx bxl-linkedin"
+						onclick="window.open('https://www.linkedin.com/in/charly-janvier-219361269/?originalSubdomain=fr')"
+					></i>
+				</div>
+				<div class="github">
+					<i
+						class="bx bxl-github"
+						onclick="window.open('https://github.com/goola971')"
+					></i>
+				</div>
+				<div class="mail">
+					<i
+						class="bx bxs-envelope"
+						onclick="window.open('mailto:janviercharly01@gmail.com')"
+					></i>
+				</div>
+			</section>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="../script.js"></script>
+		<script>
+			var fleche = document.getElementById("fleche");
+			gsap.to("#fleche", {
+				duration: 0.9,
+				y: 10,
+				onUpdate: function () {
+					if (gsap.getProperty("#fleche", "y") >= 9) {
+						gsap.to("#fleche", {
+							opacity: -1,
+						});
+					} else if (gsap.getProperty("#fleche", "y") <= 0.2) {
+						gsap.to("#fleche", {
+							opacity: 1,
+						});
+					}
+				},
+				ease: "power3.inOut",
+				yoyo: true,
+				repeat: -1,
+			});
+		</script>
+		<script src="../js/loisir.js"></script>
+	</body>
+</html>

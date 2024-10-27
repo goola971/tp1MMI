@@ -1,0 +1,58 @@
+footer {
+	background-color: #eaddcf;
+	color: #716040;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3vh;
+}
+
+footer img {
+	width: 10vw;
+	height: auto;
+	transition: all 0.3s ease;
+}
+
+footer img:hover {
+	transform: scale(1.1);
+	box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.397);
+	cursor: pointer;
+}
+
+footer img:active {
+	transform: scale(1);
+}
+
+footer hr {
+	width: 60%;
+	height: 0.1vw;
+	background-color: white;
+	border: none;
+}
+
+footer .copyright {
+	font-size: 1vw;
+	display: flex;
+	font-family: "Inknut Antiqua", serif;
+	align-items: center;
+	gap: 2vw;
+}
+
+footer .copyright span {
+	font-size: 1.1vw;
+	font-weight: bold;
+	color: #ef7970;
+}
+footer .reseaux {
+	display: flex;
+	gap: 9vw;
+}
+
+footer .reseaux .linkedin i,
+footer .reseaux .github i,
+footer .reseaux .mail i {
+	font-size: 2vw;
+	cursor: pointer;
+}

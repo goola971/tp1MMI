@@ -1,0 +1,272 @@
+main {
+	background-color: #f9f4ef;
+	padding: 5vh 3vw;
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+}
+
+.bouton {
+	font-size: 1.5vw;
+	display: flex;
+	gap: 0.5vw;
+	/* padding: 2vh 2vw; */
+	background-color: #fffffe;
+	border-radius: 25vw;
+	border: none;
+	width: max-content;
+}
+
+.bouton #charly_btn {
+	padding: 2vh 3vw;
+	border-radius: 25vw;
+	border: none;
+	font-family: "Marine Sikona", sans-serif;
+	font-size: 1.5vw;
+	background-color: #8c7851;
+	color: #fffffe;
+	cursor: pointer;
+}
+
+.bouton #anges_btn {
+	padding: 2vh 3vw;
+	border-radius: 25vw;
+	border: none;
+	font-family: "Marine Sikona", sans-serif;
+	font-size: 1.5vw;
+	background-color: transparent;
+	color: #8c7851;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
+	background-color: #fffffe;
+	padding: 5vh 5vw;
+	border-radius: 2vw;
+	position: relative;
+}
+
+.container h1 {
+	font-size: 3vw;
+	text-align: center;
+	color: #716040;
+}
+
+.charly {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 10vw;
+}
+
+.charly .college_ch {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/gravée.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.charly .lycée_ch {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/cugnot.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.charly .univ_ch {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/meau.avif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.anges {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 10vw;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
+	flex-grow: 1;
+}
+
+.anges .college_an1 {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/anges_etudes/college1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.anges .college_an2 {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/anges_etudes/college2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.anges .college_an3 {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/anges_etudes/college3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.anges .lycée_an {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/anges_etudes/lycée.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.anges .univ_an {
+	width: 15vw;
+	height: 50vh;
+	background-color: #8c7851;
+
+	background-image: url("../img/meau.avif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 2vw;
+}
+
+.description {
+	display: none;
+	justify-content: center;
+	background-color: #fcfcf5;
+	width: auto;
+	height: 55vh;
+	padding: 2vh 2vw;
+	border-radius: 2vw;
+	box-shadow: 5px 5px 10px #eaddcf6b;
+	gap: 3vw;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.description #img {
+	width: 15vw;
+	height: 100%;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.description .description_ecole {
+	display: flex;
+	flex-direction: column;
+	gap: 3vh;
+	width: 40vw;
+	height: 100%;
+}
+
+.description .description_ecole .description_titre {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.description .description_ecole .description_titre h1 {
+	font-size: 1.5vw;
+	text-align: left;
+}
+
+.description .description_ecole .description_titre button {
+	font-size: 1.5vw;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: #8c7851;
+}
+
+.description .description_ecole hr {
+	width: 50%;
+	height: 0.3vw;
+	background-color: #8c7851;
+	border: none;
+	border-radius: 2vw;
+}
+
+.description .description_ecole .date {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: 1vw;
+	gap: 15vw;
+}
+
+.description .description_ecole .intro {
+	font-size: 1vw;
+	background-color: #f9f4ef;
+	padding: 2vh 2vw;
+	border-radius: 1vw;
+	width: 100%;
+}
+
+.description .description_ecole .intro p {
+	font-size: 1vw;
+	font-weight: lighter;
+	font-family: "inknut antiqua";
+}
+
+.description a {
+	font-size: 1vw;
+	width: max-content;
+	padding: 1vh 2vw;
+	border: none;
+	background-color: #8c7851;
+	color: #f9f4ef;
+	border-radius: 2vw;
+	transition: 0.5s;
+	cursor: pointer;
+	font-family: "Marine Sikona", sans-serif;
+	margin-left: auto;
+	font-weight: lighter;
+	text-decoration: none;
+}

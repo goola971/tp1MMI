@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="IUT de Meaux" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		/>
+		<link rel="stylesheet" href="../style/style.css" />
+		<link rel="stylesheet" href="../style/header.css" />
+		<link rel="stylesheet" href="../style/index.css" />
+		<link rel="stylesheet" href="../style/footer.css" />
+		<!-- Icône du site dans l'onglet -->
+		<link rel="icon" type="image/png" href="../img/logo.png" />
+		<title>TP1 : Accueil</title>
+	</head>
+	<body>
+		<!-- Entete : logo et menu de navigation  -->
+		<div class="entete">
+			<header>
+				<!-- Logo du site -->
+				<div class="logo" onclick="location.href='index.html'">
+					<img src="../img/logo.png" alt="logo" />
+				</div>
+				<!-- Bouton pour ouvrir le menu -->
+				<button id="burger">
+					<i class="fas fa-bars"></i>
+				</button>
+			</header>
+			<!-- Menu de navigation entre les differentes pages -->
+			<div class="nav" id="nav">
+				<div class="entete_nav">
+					<h3>Menu</h3>
+					<i class="fas fa-times" id="fermer"></i>
+				</div>
+				<hr />
+
+				<nav>
+					<ul>
+						<li><a href="etudes.html">Etudes</a></li>
+						<li><a href="competences.html">Compétences</a></li>
+						<li><a href="favoris.html">Favoris</a></li>
+						<li><a href="loisirs.html">Loisirs</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Hero : accueil les utilisateurs -->
+		<section class="hero">
+			<h1>Bienvenue</h1>
+			<p>
+				Nous sommes des étudiants de
+				<span>l'Université Gustave Eiffel</span> de Meaux <br />
+				Dans le parcour de <span>développement web.</span>
+			</p>
+			<i class="fas fa-arrow-down" id="fleche"></i>
+		</section>
+
+		<!-- Main -->
+		<main>
+			<section class="a_propos">
+				<div class="a_propos_container">
+					<div class="description">
+						<p>JANVIER</p>
+						<p>Charly</p>
+						<p>2 allée de la marne</p>
+						<p>93160 Noisy le Grand</p>
+						<p>janviercharly01@gmail.com</p>
+						<p>+33 7 77 34 48 04</p>
+					</div>
+					<img
+						src="../img/photo//charly.jpg"
+						alt=""
+						class="charly_img"
+					/>
+				</div>
+				<button onclick="ouvrir_map()">
+					Etudiant à <i class="bx bxs-right-arrow"></i>
+				</button>
+			</section>
+			<hr />
+			<section class="a_propos2">
+				<div class="a_propos_container2">
+					<img src="../img/photo/brsm.jpg" alt="" />
+					<div class="description2">
+						<p>BAHAMBOULA</p>
+						<p>Anges de l'or</p>
+						<p>1 allée des genêts</p>
+						<p>93600 Aulnay sous Bois</p>
+						<p>anges.bahamboula@gmail.com</p>
+						<p>+33 7 52 44 94 43</p>
+					</div>
+				</div>
+				<button onclick="ouvrir_map()">
+					Etudiant à <i class="bx bxs-right-arrow"></i>
+				</button>
+			</section>
+			<!-- Adresse de l'IUT Gustave Eiffel de Meaux avec iframe pour un apercu (directement recuperer de google map) -->
+			<section class="map" id="map_etudiants">
+				<div class="entete_map">
+					<h3>IUT De Meaux</h3>
+					<button onclick="fermer_map()">
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+				<div>
+					<div>
+						<p>IUT Gustave Eiffel - site de Meaux</p>
+						<p>17 Rue Jablinot</p>
+						<p>77100 Meaux,</p>
+						<p>France.</p>
+					</div>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.9286211388944!2d2.8753651768958406!3d48.954844993913184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8a11cceb9ee4f%3A0x143615de96b042c5!2sIUT%20De%20Meaux%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1729273369677!5m2!1sfr!2sfr"
+						width="900"
+						height="650"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</section>
+		</main>
+		<!-- Footer : pied de page du site -->
+		<footer>
+			<!-- Logo du site qui envoie vers le site de l'IUT Gustave Eiffel -->
+			<img
+				src="../img/logo.png"
+				alt=""
+				onclick="location.href='https://www.univ-gustave-eiffel.fr'"
+			/>
+			<!-- Copyright -->
+			<div class="copyright">
+				<p>Designed by <span>Charly</span></p>
+				<p>Develloped by <span>Charly</span></p>
+				<p>Copyright &copy; 2024. Tous droits réservés.</p>
+			</div>
+			<hr />
+			<!-- contact -->
+			<div class="reseaux">
+				<div class="linkedin">
+					<i
+						class="bx bxl-linkedin"
+						onclick="window.open('https://www.linkedin.com/in/charly-janvier-219361269/?originalSubdomain=fr')"
+					></i>
+				</div>
+				<div class="github">
+					<i
+						class="bx bxl-github"
+						onclick="window.open('https://github.com/goola971')"
+					></i>
+				</div>
+				<div class="mail">
+					<i
+						class="bx bxs-envelope"
+						onclick="window.open('mailto:janviercharly01@gmail.com')"
+					></i>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Script JS -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script src="../script.js"></script>
+		<script>
+			var fleche = document.getElementById("fleche");
+			gsap.to("#fleche", {
+				duration: 0.9,
+				y: 10,
+				onUpdate: function () {
+					if (gsap.getProperty("#fleche", "y") >= 9) {
+						gsap.to("#fleche", {
+							opacity: -1,
+						});
+					} else if (gsap.getProperty("#fleche", "y") <= 0.2) {
+						gsap.to("#fleche", {
+							opacity: 1,
+						});
+					}
+				},
+				ease: "power3.inOut",
+				yoyo: true,
+				repeat: -1,
+			});
+		</script>
+		<script src="../js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+main {
+	background-color: #f9f4ef;
+	padding: 5vh 3vw;
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+}
+
+.bouton {
+	font-size: 1.5vw;
+	display: flex;
+	gap: 0.5vw;
+	/* padding: 2vh 2vw; */
+	background-color: #fffffe;
+	border-radius: 25vw;
+	border: none;
+	width: max-content;
+}
+
+.bouton #charly_btn {
+	padding: 2vh 3vw;
+	border-radius: 25vw;
+	border: none;
+	font-family: "Marine Sikona", sans-serif;
+	font-size: 1.5vw;
+	background-color: #8c7851;
+	color: #fffffe;
+	cursor: pointer;
+}
+
+.bouton #anges_btn {
+	padding: 2vh 3vw;
+	border-radius: 25vw;
+	border: none;
+	font-family: "Marine Sikona", sans-serif;
+	font-size: 1.5vw;
+	background-color: transparent;
+	color: #8c7851;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
+	height: 100%;
+	background-color: #fffffe;
+	padding: 5vh 5vw;
+	border-radius: 2vw;
+	position: relative;
+}
+.container h1 {
+	color: #716040;
+	font-size: 3vw;
+}
+
+.container h2 {
+	color: #716040;
+	font-size: 1.5vw;
+}
+
+#charly,
+#anges {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.card {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	flex-grow: 1;
+	flex-basis: 200;
+	border-radius: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+	transform: scale(0.98);
+}
+
+.card:hover img {
+	transform: scale(1.1);
+}
